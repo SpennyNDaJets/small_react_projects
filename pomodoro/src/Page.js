@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import "./Page.css";
-import "./App.css";
-import FlatButton from "material-ui/FlatButton";
-import RaisedButton from "material-ui/RaisedButton";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import { Card, CardText, CardHeader, CardActions } from "material-ui/Card";
-import TextField from "material-ui/TextField";
-import * as firebase from "firebase";
+import { FlatButton, RaisedButton, MuiThemeProvider, TextField } from "material-ui";
 import {
   Table,
   TableBody,
@@ -15,6 +8,17 @@ import {
   TableRow,
   TableRowColumn
 } from "material-ui/Table";
+import { 
+  Card, 
+  CardActions,
+  CardHeader,
+  CardText
+} from "material-ui/Card";
+
+import * as firebase from "firebase";
+
+import "./Page.css";
+import "./App.css";
 
 const cardStyle = {
   margin: "12"
@@ -221,17 +225,6 @@ class Page extends Component {
       }
     });
   }
-  /*
-  createLeaderBoard = () => {
-    console.log(this.state.userlist);
-    var userList = this.state.userlist;
-    var list1 = userList.map(userKey => {
-      this.state.user[userKey].length;
-    });
-    list1.sort();
-    console.log(list1);
-  };
-  */
 
   render() {
     return (

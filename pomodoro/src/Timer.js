@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDom from "react-dom";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Dialog from "material-ui/Dialog";
-// import './Timer.css'
 
 class Timer extends Component {
   constructor(props) {

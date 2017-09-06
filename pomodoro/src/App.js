@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import { pomodoro } from "./firebase-config";
-import { Button, Layout } from "antd";
-import * as firebase from "firebase";
-import AppBar from "material-ui/AppBar";
-import RaisedButton from "material-ui/RaisedButton";
-import IconButton from "material-ui/IconButton";
+import { AppBar, RaisedButton, IconButton, MuiThemeProvider } from "material-ui";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Button, Layout } from "antd";
+
+
+import { pomodoro } from "./firebase-config";
+import * as firebase from "firebase";
+
+import "./App.css";
+import logo from "./logo.svg";
+
 import Page from "./Page";
 import Timer from "./Timer";
 import Motivation from "./Motivation";
